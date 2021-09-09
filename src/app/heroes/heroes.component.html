@@ -1,0 +1,17 @@
+<h2>Hello {{dvh_hero.dvh_name}} </h2>
+<p>Id           : {{dvh_hero.dvh_id}}</p>
+<p>Name         : {{dvh_hero.dvh_name}}</p>
+
+<div>
+  <label for    = "heroes">Hero name:</label>
+  <input type   = "text" id="name" [(ngModel)]="dvh_hero.dvh_name" >
+</div>
+
+<h2>My Heroes</h2>
+<ul class="heroes">
+  <li *ngFor="let dvh_hero of dvh_list_hero" [class.selected]="dvh_hero === selectedHero"  (click)="onSelect(dvh_hero)">
+    <span class="badge">{{dvh_hero.dvh_id}}</span>
+    {{dvh_hero.dvh_name}}
+  </li>
+</ul>
+<app-message></app-message>

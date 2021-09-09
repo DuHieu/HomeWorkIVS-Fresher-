@@ -1,0 +1,42 @@
+.heroes{
+  list-style-type: none;
+  padding: 0%;
+  /* width: 15em; */
+  /* margin: auto; */
+
+
+}
+.heroes li{
+  padding: 0px;
+  background-color: rgb(191, 240, 240);
+  border-radius: 10px;
+  margin: 7px;
+  height: 34px;
+}
+.heroes li:hover{
+
+  background-image: linear-gradient(to right,rgb(0, 238, 255), rgb(209, 52, 201));
+  font-size: 102%;
+
+
+}
+.heroes li:active{
+  background-color: rgb(20, 247, 247);
+  font-size: 102%;
+}
+.heroes li.selected{
+  background-image: linear-gradient(to right,rgb(0, 238, 255), rgb(209, 52, 201));
+  font-size: 102%;
+}
+.heroes .badge{
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 10px 10px 0px 10px ;
+  background-color:#153c66;
+
+
+  height: 1.8em;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+}

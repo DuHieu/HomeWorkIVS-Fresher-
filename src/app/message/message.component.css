@@ -1,0 +1,12 @@
+.clear{
+  padding:5px;
+  background-image: linear-gradient(to right,rgb(0, 238, 255), rgb(209, 52, 201));
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 15px;
+}
+.message{
+  margin-bottom: 10px;
+  font-style: italic;
+  font-size: 70%;
+}
