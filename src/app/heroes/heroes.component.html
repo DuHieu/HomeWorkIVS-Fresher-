@@ -9,11 +9,11 @@
 
 <h2>My Heroes</h2>
 <ul class="heroes">
-  <li *ngFor="let detailhero of dvh_list_hero" >
-      <a [routerLink]="['/detail', detailhero.dvh_id]" routerLink="/detail/{{detailhero.dvh_id}}">
+  <li *ngFor="let detailhero of dvh_list_hero" routerLink="/detail/{{detailhero.dvh_id}}">
+
 
         <span class="badge">{{detailhero.dvh_id}}</span> {{detailhero.dvh_name}}
-      </a>
+
 
 
   </li>
