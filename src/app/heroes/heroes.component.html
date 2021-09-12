@@ -10,6 +10,7 @@
 <h2>My Heroes</h2>
 <ul class="heroes">
   <li *ngFor="let detailhero of dvh_list_hero" routerLink="/detail/{{detailhero.dvh_id}}">
+    <!-- chỗ này nè ô đổi cái route lại -->
 
 
         <span class="badge">{{detailhero.dvh_id}}</span> {{detailhero.dvh_name}}
@@ -20,3 +21,5 @@
 </ul>
 <!-- <app-heroes-detail [dvh_hero]="selectedHero"></app-heroes-detail> -->
 <!-- <app-message></app-message> -->
+
+

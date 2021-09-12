@@ -14,7 +14,7 @@ const dvh_routes: Routes =[
 
 ]
 @NgModule({
-  // declarations: [],
+ //declarations: [],
   imports: [RouterModule.forRoot(dvh_routes)],
   exports: [RouterModule]
 })

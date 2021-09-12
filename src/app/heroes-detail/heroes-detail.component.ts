@@ -11,7 +11,7 @@ import { Location } from '@angular/common';
   styleUrls: ['./heroes-detail.component.css']
 })
 export class HeroesDetailComponent implements OnInit {
-  hero: DvhHero | undefined;
+  heroes: DvhHero | undefined;
   constructor(
     private route: ActivatedRoute,
     private heroService: dvh_HeroService,
@@ -24,7 +24,7 @@ export class HeroesDetailComponent implements OnInit {
   getHero(): void {
     const id = parseInt(this.route.snapshot.paramMap.get('id')!, 10);
     this.heroService.getHero(id)
-      .subscribe(hero => this.hero = hero);
+      .subscribe(hero => this.heroes = hero);
   }
   goback(){
     this.location.back();
